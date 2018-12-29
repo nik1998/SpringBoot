@@ -27,15 +27,15 @@ public class MyController {
         return result + "\n" ;
     }
     @ResponseBody
-    @RequestMapping(value = "/save", method = RequestMethod.POST, headers = {"Content-type=application/json"})
-    public String save(@RequestBody MyOrder o){
+    @RequestMapping(value = "/insert", method = RequestMethod.POST, headers = {"Content-type=application/json"})
+    public String insert(@RequestBody MyOrder o){
         String result = "Ok";
         rep.createOrder(o);
         return result + "\n";
     }
     @ResponseBody
-    @RequestMapping(value = "/insert", method = RequestMethod.POST, headers = {"Content-type=application/json"})
-    public String insert(@RequestBody MyOrder o){
+    @RequestMapping(value = "/update", method = RequestMethod.POST, headers = {"Content-type=application/json"})
+    public String update(@RequestBody MyOrder o){
         String result = "Ok";
         rep.updateOrder(o);
         return result + "\n" ;
