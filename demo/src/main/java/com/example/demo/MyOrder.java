@@ -18,11 +18,5 @@ public class MyOrder implements Serializable {
     private Point StartPoint;*/
     @Column(name = "Status")
     private String Status;
-    //protected MyOrder() {}
-/*
-    public MyOrder(Point StartPoint, Point EndPoint,String Status) {
-        this.StartPoint = StartPoint;
-        this.EndPoint = EndPoint;
-    }*/
 
 }

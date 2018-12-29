@@ -2,7 +2,6 @@ package com.example.demo.service;
 
 import com.example.demo.MyOrder;
 import com.example.demo.repository.OrderRepository;
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -45,19 +44,5 @@ public class OrderService {
         return rep.findAll();
     }
 
-    public MyOrder findById(Long userId){
-        return rep.findById(userId).orElse(null);
-    }
-/*
-    public List<MyOrder> findAllByName(String name){
-        return rep.findAllByName(name);
-    }
 
-    public List<MyOrder> findWhereEmailIsGmail(){
-        return rep.findWhereEmailIsGmail();
-    }
-
-    public List<MyOrder> findWhereNameStartsFromSmith(){
-        return rep.findWhereNameStartsFromSmith();
-    }*/
 }
